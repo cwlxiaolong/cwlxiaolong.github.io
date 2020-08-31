@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2020 | Hexo</title>
+  <title>移位运算笔记 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2020/index.html">
+  <meta name="description" content="为什么一个数无符号右移32位等于它本身？位移大于等于数值类型是会进行位移数取余的，也就是说int类型是32位，当位移等于32时会位移(32%32)位，当33时位移(33%32)位，也就是说位移33位其实跟位移1位是一样的。为什么取余的理由是，如果大于等于32位不取余位移的话，所有数都会变成零，对于int类型来说毫无意义。所以位移运算只要掌握在数值类型位数之内就行了，int类型就32位之内的位移，以">
+<meta property="og:type" content="article">
+<meta property="og:title" content="移位运算笔记">
+<meta property="og:url" content="http://yoursite.com/2020/08/31/%E7%A7%BB%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="为什么一个数无符号右移32位等于它本身？位移大于等于数值类型是会进行位移数取余的，也就是说int类型是32位，当位移等于32时会位移(32%32)位，当33时位移(33%32)位，也就是说位移33位其实跟位移1位是一样的。为什么取余的理由是，如果大于等于32位不取余位移的话，所有数都会变成零，对于int类型来说毫无意义。所以位移运算只要掌握在数值类型位数之内就行了，int类型就32位之内的位移，以">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-08-31T13:20:52.000Z">
+<meta property="article:modified_time" content="2020-08-31T13:30:29.032Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -150,211 +154,155 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-移位运算笔记" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      移位运算笔记
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/08/31/%E7%A7%BB%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%94%E8%AE%B0/" class="archive-article-date">
+
+        
+        <a href="/2020/08/31/%E7%A7%BB%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%94%E8%AE%B0/" class="archive-article-date">
   	<time datetime="2020-08-31T13:20:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-31</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/08/31/%E7%A7%BB%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%94%E8%AE%B0/">移位运算笔记</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="为什么一个数无符号右移32位等于它本身？"><a href="#为什么一个数无符号右移32位等于它本身？" class="headerlink" title="为什么一个数无符号右移32位等于它本身？"></a>为什么一个数无符号右移32位等于它本身？</h1><h3 id="位移大于等于数值类型是会进行位移数取余的，也就是说int类型是32位，当位移等于32时会位移-32-32-位，当33时位移-33-32-位，"><a href="#位移大于等于数值类型是会进行位移数取余的，也就是说int类型是32位，当位移等于32时会位移-32-32-位，当33时位移-33-32-位，" class="headerlink" title="位移大于等于数值类型是会进行位移数取余的，也就是说int类型是32位，当位移等于32时会位移(32%32)位，当33时位移(33%32)位，"></a>位移大于等于数值类型是会进行位移数取余的，也就是说int类型是32位，当位移等于32时会位移(32%32)位，当33时位移(33%32)位，</h3><h3 id="也就是说位移33位其实跟位移1位是一样的。为什么取余的理由是，如果大于等于32位不取余位移的话，所有数都会变成零，对于int类型来说毫无意义。所以位移运算只要掌握在数值类型位数之内就行了，int类型就32位之内的位移，以外也是重复的。（64位也同理）"><a href="#也就是说位移33位其实跟位移1位是一样的。为什么取余的理由是，如果大于等于32位不取余位移的话，所有数都会变成零，对于int类型来说毫无意义。所以位移运算只要掌握在数值类型位数之内就行了，int类型就32位之内的位移，以外也是重复的。（64位也同理）" class="headerlink" title="也就是说位移33位其实跟位移1位是一样的。为什么取余的理由是，如果大于等于32位不取余位移的话，所有数都会变成零，对于int类型来说毫无意义。所以位移运算只要掌握在数值类型位数之内就行了，int类型就32位之内的位移，以外也是重复的。（64位也同理）"></a>也就是说位移33位其实跟位移1位是一样的。为什么取余的理由是，如果大于等于32位不取余位移的话，所有数都会变成零，对于int类型来说毫无意义。所以位移运算只要掌握在数值类型位数之内就行了，int类型就32位之内的位移，以外也是重复的。（64位也同理）</h3><h3 id><a href="#" class="headerlink" title></a></h3>
+      
 
-        <div class="article-info info-on-right">
-          
-          
-
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/08/31/%E7%A7%BB%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%94%E8%AE%B0/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/08/08/%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%9A%84%E6%93%8D%E4%BD%9C/" class="archive-article-date">
-  	<time datetime="2020-08-08T13:49:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-08</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/08/08/%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%9A%84%E6%93%8D%E4%BD%9C/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">线性表的操作</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/08/08/%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%9A%84%E6%93%8D%E4%BD%9C/">线性表的操作</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/07/28/%E5%85%AB%E5%A4%A7%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/" class="archive-article-date">
-  	<time datetime="2020-07-28T01:57:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-28</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/07/28/%E5%85%AB%E5%A4%A7%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/">八大算法思想</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/07/17/%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%BA%95%E5%B1%82%E5%9B%BE%E8%A7%A3/" class="archive-article-date">
-  	<time datetime="2020-07-17T06:48:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/07/17/%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%BA%95%E5%B1%82%E5%9B%BE%E8%A7%A3/">类和对象底层图解</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/07/12/%E4%BA%8C%E5%8F%89%E6%8E%92%E5%BA%8F%E6%A0%91/" class="archive-article-date">
-  	<time datetime="2020-07-12T03:07:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/07/12/%E4%BA%8C%E5%8F%89%E6%8E%92%E5%BA%8F%E6%A0%91/">二叉排序树</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/07/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  	<time datetime="2020-07-10T13:56:36.528Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-10</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/07/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">我的第一篇博客</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/07/10/hello-world/" class="archive-article-date">
-  	<time datetime="2020-07-10T13:41:33.121Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-10</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/07/10/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -377,8 +325,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

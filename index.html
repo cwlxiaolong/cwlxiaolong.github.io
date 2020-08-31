@@ -152,6 +152,68 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-移位运算笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/08/31/%E7%A7%BB%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%94%E8%AE%B0/">移位运算笔记</a>
+    </h1>
+  
+
+        
+        <a href="/2020/08/31/%E7%A7%BB%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%94%E8%AE%B0/" class="archive-article-date">
+  	<time datetime="2020-08-31T13:20:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-31</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="为什么一个数无符号右移32位等于它本身？"><a href="#为什么一个数无符号右移32位等于它本身？" class="headerlink" title="为什么一个数无符号右移32位等于它本身？"></a>为什么一个数无符号右移32位等于它本身？</h1><h3 id="位移大于等于数值类型是会进行位移数取余的，也就是说int类型是32位，当位移等于32时会位移-32-32-位，当33时位移-33-32-位，"><a href="#位移大于等于数值类型是会进行位移数取余的，也就是说int类型是32位，当位移等于32时会位移-32-32-位，当33时位移-33-32-位，" class="headerlink" title="位移大于等于数值类型是会进行位移数取余的，也就是说int类型是32位，当位移等于32时会位移(32%32)位，当33时位移(33%32)位，"></a>位移大于等于数值类型是会进行位移数取余的，也就是说int类型是32位，当位移等于32时会位移(32%32)位，当33时位移(33%32)位，</h3><h3 id="也就是说位移33位其实跟位移1位是一样的。为什么取余的理由是，如果大于等于32位不取余位移的话，所有数都会变成零，对于int类型来说毫无意义。所以位移运算只要掌握在数值类型位数之内就行了，int类型就32位之内的位移，以外也是重复的。（64位也同理）"><a href="#也就是说位移33位其实跟位移1位是一样的。为什么取余的理由是，如果大于等于32位不取余位移的话，所有数都会变成零，对于int类型来说毫无意义。所以位移运算只要掌握在数值类型位数之内就行了，int类型就32位之内的位移，以外也是重复的。（64位也同理）" class="headerlink" title="也就是说位移33位其实跟位移1位是一样的。为什么取余的理由是，如果大于等于32位不取余位移的话，所有数都会变成零，对于int类型来说毫无意义。所以位移运算只要掌握在数值类型位数之内就行了，int类型就32位之内的位移，以外也是重复的。（64位也同理）"></a>也就是说位移33位其实跟位移1位是一样的。为什么取余的理由是，如果大于等于32位不取余位移的话，所有数都会变成零，对于int类型来说毫无意义。所以位移运算只要掌握在数值类型位数之内就行了，int类型就32位之内的位移，以外也是重复的。（64位也同理）</h3><h3 id><a href="#" class="headerlink" title></a></h3>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/08/31/%E7%A7%BB%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%94%E8%AE%B0/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-线性表的操作" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
