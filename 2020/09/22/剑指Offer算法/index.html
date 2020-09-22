@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | Hexo</title>
+  <title>剑指Offer算法 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="笔者找遍了全网关于剑指Offer的算法解题集，发现基本上都是粘贴复制的，都是给出一小段算法，不能直接运行测试，本着钻牛角尖的态度，笔者打算把本书当中的算法完整步骤给出来，望大家指正第一题：找出数组中重复的数字123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525">
+<meta property="og:type" content="article">
+<meta property="og:title" content="剑指Offer算法">
+<meta property="og:url" content="http://yoursite.com/2020/09/22/%E5%89%91%E6%8C%87Offer%E7%AE%97%E6%B3%95/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="笔者找遍了全网关于剑指Offer的算法解题集，发现基本上都是粘贴复制的，都是给出一小段算法，不能直接运行测试，本着钻牛角尖的态度，笔者打算把本书当中的算法完整步骤给出来，望大家指正第一题：找出数组中重复的数字123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-09-22T12:15:09.000Z">
+<meta property="article:modified_time" content="2020-09-22T12:28:15.742Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -150,292 +154,157 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-剑指Offer算法" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      剑指Offer算法
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/09/22/%E5%89%91%E6%8C%87Offer%E7%AE%97%E6%B3%95/" class="archive-article-date">
+
+        
+        <a href="/2020/09/22/%E5%89%91%E6%8C%87Offer%E7%AE%97%E6%B3%95/" class="archive-article-date">
   	<time datetime="2020-09-22T12:15:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-22</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/09/22/%E5%89%91%E6%8C%87Offer%E7%AE%97%E6%B3%95/">剑指Offer算法</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="笔者找遍了全网关于剑指Offer的算法解题集，发现基本上都是粘贴复制的，都是给出一小段算法，不能直接运行测试，本着钻牛角尖的态度，笔者打算把本书当中的算法完整步骤给出来，望大家指正"><a href="#笔者找遍了全网关于剑指Offer的算法解题集，发现基本上都是粘贴复制的，都是给出一小段算法，不能直接运行测试，本着钻牛角尖的态度，笔者打算把本书当中的算法完整步骤给出来，望大家指正" class="headerlink" title="笔者找遍了全网关于剑指Offer的算法解题集，发现基本上都是粘贴复制的，都是给出一小段算法，不能直接运行测试，本着钻牛角尖的态度，笔者打算把本书当中的算法完整步骤给出来，望大家指正"></a>笔者找遍了全网关于剑指Offer的算法解题集，发现基本上都是粘贴复制的，都是给出一小段算法，不能直接运行测试，本着钻牛角尖的态度，笔者打算把本书当中的算法完整步骤给出来，望大家指正</h1><h4 id="第一题：找出数组中重复的数字"><a href="#第一题：找出数组中重复的数字" class="headerlink" title="第一题：找出数组中重复的数字"></a><strong>第一题：找出数组中重复的数字</strong></h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] findRepeatNumber(<span class="keyword">int</span>[] nums) &#123;</span><br><span class="line">        <span class="keyword">if</span>(nums == <span class="keyword">null</span> || nums.length &lt;= <span class="number">0</span> )&#123;              <span class="comment">//如果数组为空或长度为0则有误，返回空</span></span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length ; i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(nums[i] &lt; <span class="number">0</span> || nums[i] &gt; nums.length - <span class="number">1</span>)&#123;   <span class="comment">//如果数组元素小于零或大于数组长度则有误，返回空</span></span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span>[] repeat = <span class="keyword">new</span> <span class="keyword">int</span>[nums.length];           <span class="comment">//假设最极端的情况是nums数组元素全部重复，以确保能够接受所有的重复元素</span></span><br><span class="line">        <span class="keyword">int</span> j = <span class="number">0</span>;</span><br><span class="line">        Set&lt;Integer&gt; set = <span class="keyword">new</span> HashSet&lt;Integer&gt;();     <span class="comment">//Hashset集合不能添加重复的元素，有利于帮助判断是否是重复元素</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> num : nums)&#123;</span><br><span class="line">            <span class="keyword">if</span>(!set.add(num))&#123;      <span class="comment">//如果添加失败，则说明此元素是重复的元素</span></span><br><span class="line">                repeat[j] = num;    <span class="comment">//将重复元素添加至repeat数组中</span></span><br><span class="line">                j++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> n = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (nums[i] == <span class="number">0</span>) &#123;</span><br><span class="line">                n++;    <span class="comment">//从头到尾遍历一下nums数组，如果发现零是重复元素，则让n++</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> k = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; repeat.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (repeat[i] != <span class="number">0</span>) &#123;</span><br><span class="line">                k++;    <span class="comment">//由于repeat定义的长度是nums的长度，如果nums不全为同一个元素，那么repeat可能会有很多重复的0元素</span></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (n &gt;= <span class="number">2</span>) &#123;   <span class="comment">//如果n&gt;=2，则说明0是重复元素</span></span><br><span class="line">            k++;        <span class="comment">//让rep最后一个元素为0</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span>[] rep = <span class="keyword">new</span> <span class="keyword">int</span>[k];     <span class="comment">//定义rep数组，接收nums里面真正重复的元素</span></span><br><span class="line">        <span class="keyword">int</span> m = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; repeat.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (repeat[i] != <span class="number">0</span>) &#123;</span><br><span class="line">                rep[m] = repeat[i];     <span class="comment">//将repeat中有用的元素添加至rep当中</span></span><br><span class="line">                m++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> rep;     <span class="comment">//得到真正重复的元素集合</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//测试代码</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] arr = &#123;<span class="number">2</span>,<span class="number">1</span>,<span class="number">0</span>,<span class="number">2</span>,<span class="number">1</span>,<span class="number">0</span>,<span class="number">5</span>,<span class="number">4</span>,<span class="number">5</span>&#125;;</span><br><span class="line">        <span class="keyword">int</span>[] repeatNumber = findRepeatNumber(arr);</span><br><span class="line">        System.out.println(<span class="string">"repeatNumber="</span>+ Arrays.toString(repeatNumber));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//输出结果</span></span><br><span class="line">repeatNumber=[<span class="number">2</span>, <span class="number">1</span>, <span class="number">5</span>, <span class="number">0</span>]</span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
-          
 
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/09/22/%E5%89%91%E6%8C%87Offer%E7%AE%97%E6%B3%95/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/09/22/Linux%E7%B3%BB%E7%BB%9F%E4%B8%AD%E6%9E%84%E5%BB%BAshtool%E5%BA%93/" class="archive-article-date">
-  	<time datetime="2020-09-22T02:44:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-22</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/09/22/Linux%E7%B3%BB%E7%BB%9F%E4%B8%AD%E6%9E%84%E5%BB%BAshtool%E5%BA%93/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Linux系统中构建shtool库</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/09/22/Linux%E7%B3%BB%E7%BB%9F%E4%B8%AD%E6%9E%84%E5%BB%BAshtool%E5%BA%93/">Linux系统中构建shtool库</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/09/21/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/" class="archive-article-date">
-  	<time datetime="2020-09-21T07:43:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/09/21/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/">单例模式</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/08/31/%E7%A7%BB%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%94%E8%AE%B0/" class="archive-article-date">
-  	<time datetime="2020-08-31T13:20:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-31</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/08/31/%E7%A7%BB%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%94%E8%AE%B0/">移位运算笔记</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/08/08/%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%9A%84%E6%93%8D%E4%BD%9C/" class="archive-article-date">
-  	<time datetime="2020-08-08T13:49:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-08</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/08/08/%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%9A%84%E6%93%8D%E4%BD%9C/">线性表的操作</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/07/28/%E5%85%AB%E5%A4%A7%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/" class="archive-article-date">
-  	<time datetime="2020-07-28T01:57:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-28</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/07/28/%E5%85%AB%E5%A4%A7%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/">八大算法思想</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/07/17/%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%BA%95%E5%B1%82%E5%9B%BE%E8%A7%A3/" class="archive-article-date">
-  	<time datetime="2020-07-17T06:48:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/07/17/%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%BA%95%E5%B1%82%E5%9B%BE%E8%A7%A3/">类和对象底层图解</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/07/12/%E4%BA%8C%E5%8F%89%E6%8E%92%E5%BA%8F%E6%A0%91/" class="archive-article-date">
-  	<time datetime="2020-07-12T03:07:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/07/12/%E4%BA%8C%E5%8F%89%E6%8E%92%E5%BA%8F%E6%A0%91/">二叉排序树</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/07/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  	<time datetime="2020-07-10T13:56:36.528Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-10</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/07/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">我的第一篇博客</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/07/10/hello-world/" class="archive-article-date">
-  	<time datetime="2020-07-10T13:41:33.121Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-10</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/07/10/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -458,8 +327,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
